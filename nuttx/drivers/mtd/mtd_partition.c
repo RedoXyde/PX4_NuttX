@@ -39,6 +39,10 @@
 
 #include <nuttx/config.h>
 
+// #define CONFIG_DEBUG
+// #define CONFIG_DEBUG_VERBOSE
+// #define CONFIG_DEBUG_FS
+
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -500,7 +504,7 @@ FAR struct mtd_dev_s *mtd_partition(FAR struct mtd_dev_s *mtd, off_t firstblock,
   part->blkpererase  = blkpererase;
 
   /* Return the implementation-specific state structure as the MTD device */
-
+  fvdbg("New MTD Partition: firstblock: %lu neraseblocks=%u blocksize=%u blkpererase=%u\n",part->firstblock,part->neraseblocks,part->blocksize,part->blkpererase);
   return &part->child;
 }
 

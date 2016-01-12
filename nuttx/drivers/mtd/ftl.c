@@ -39,6 +39,10 @@
 
 #include <nuttx/config.h>
 
+#define CONFIG_DEBUG
+#define CONFIG_DEBUG_VERBOSE
+#define CONFIG_DEBUG_FS
+
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <stdint.h>
