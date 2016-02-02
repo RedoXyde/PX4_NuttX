@@ -41,11 +41,6 @@
 
 #include <nuttx/config.h>
 
-// #define CONFIG_DEBUG
-// #define CONFIG_DEBUG_VERBOSE
-// #define CONFIG_DEBUG_FS
-//#define CONFIG_M25P_SUBSECTOR_ERASE
-
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdbool.h>
